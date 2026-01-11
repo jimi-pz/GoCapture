@@ -1,18 +1,12 @@
 ﻿
 namespace GoCapture
 {
-    public class Coordinate
+    public class Coordinate(int x, int y)
     {
-        public int X { get; set; }
-        public int Y { get; set; }
+        public int X { get; set; } = x;
+        public int Y { get; set; } = y;
 
-        public Coordinate(int x, int y)
-        {
-            X = x;
-            Y = y;
-        }
-
-        public Coordinate GetCoordinate(Coordinate coordinate, Direction direction)
+        public static Coordinate GetCoordinate(Coordinate coordinate, Direction direction)
         {
             var x = coordinate.X;
             var y = coordinate.Y;

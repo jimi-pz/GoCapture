@@ -15,7 +15,7 @@ namespace GoCapture
             XSize = xSize;
             YSize = ySize;
 
-            FilledPoints = new List<MapPoint>();
+            FilledPoints = [];
             for (var i = 1; i <= XSize; i++)
             {
                 FilledPoints.Add(new MapPoint(i, 0, CellStatus.Border));
